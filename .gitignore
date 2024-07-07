@@ -1,8 +1,43 @@
 # Terraform specific files
-.terraform/         # Terraform directory
-*.tfstate           # Terraform state files
-*.tfstate.*         # Backup state files
-crash.log           # Crash logs
-*.tfvars            # Personal or environment-specific variable definitions
-terraform.tfvars    # File with Terraform variables
-.terraform.lock.hcl # Terraform provider lock file
+.terraform/
+*.tfstate
+*.tfstate.*
+crash.log
+*.tfvars
+terraform.tfvars
+.terraform.lock.hcl
+
+# Ignore sensitive files
+*.pem
+*.key
+*.crt
+*.csr
+
+# Ignore log files and temporary files
+*.log
+*.tmp
+*.bak
+
+# Ignore system files
+.DS_Store
+Thumbs.db
+
+# Ignore Docker related files
+docker-compose.override.yml
+.dockerignore
+
+# Ignore editor-specific files
+.vscode/
+.idea/
+*.swp
+
+# Node.js specific files (if Strapi uses Node.js)
+node_modules/
+
+# Environment files (if used)
+.env
+.env.*
+
+# Ignore any other sensitive files
+secret.json
+config.yaml

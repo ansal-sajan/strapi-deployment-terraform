@@ -1,0 +1,8 @@
+# Terraform specific files
+.terraform/         # Terraform directory
+*.tfstate           # Terraform state files
+*.tfstate.*         # Backup state files
+crash.log           # Crash logs
+*.tfvars            # Personal or environment-specific variable definitions
+terraform.tfvars    # File with Terraform variables
+.terraform.lock.hcl # Terraform provider lock file
